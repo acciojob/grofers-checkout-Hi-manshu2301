@@ -9,12 +9,7 @@ const getSum = () => {
 	prices.forEach(function(price){
 		total += Number(price.textContent);
 	});
-	const row = document.createElement("tr");
-	const cell = document.createElement("td");
-	cell.colSpan = 2;
-	cell.textContent = total;
-	row.appendChild(cell);
-	document.querySelector("table").appendChild(row);
+	document.getElementById("ans").textContent =total;
   
 };
 getSumBtn.addEventListener("click",getSum);
