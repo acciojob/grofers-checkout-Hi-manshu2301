@@ -10,7 +10,7 @@ const getSum = () => {
 		total += Number(price.textContent);
 	});
 	const row = document.createElement("tr");
-	const cell = document.createElemtnt("td");
+	const cell = document.createElement("td");
 	cell.colSpan = 2;
 	cell.textContent = total;
 	row.appenChild(cell);
